@@ -15,6 +15,7 @@
         De-provisioning
 
 ### Use Cases
+
         * As a Cloud Admin, deploy OpenTelemetry and AppDynamics collectors to collect Metrics, 
         Logs and Traces from AKS and EKS clusters and auto instrumented cloud native services 
 
