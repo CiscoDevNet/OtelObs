@@ -129,7 +129,7 @@ In here, let's automate all of the above deployments in a single terraform scrip
 
         helm delete appdynamics-collectors -n appdynamics
 
-Git clone from this location: https://github.com/CiscoDevNet/appdotel
+Git clone from this location: https://github.com/CiscoDevNet/OtelObs
 
 Before running the terraform script (main.tf) , add the following variables to terraform.auto.tfvars.
 
