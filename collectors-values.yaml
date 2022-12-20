@@ -1,0 +1,34 @@
+global:
+  clusterName: devnet
+appdynamics-otel-collector:
+  clientId: XXXXXXXX
+  clientSecret: XXXXXXXXXXXX
+  endpoint: XXXXXXXXXX
+  tokenUrl: XXXXXXXXXX 
+  spec:
+    image: otel/opentelemetry-collector-contrib:0.59.0
+  configOverride:
+    exporters:
+      logging:
+        loglevel: info
+      otlp/generic-collector:
+        endpoint: os-otel-collector.default.svc.cluster.local:4317
+        tls:
+          insecure: true
+      jaeger:
+        endpoint: "jaeger-all-in-one.default.svc.cluster.local:14250"
+        tls:
+          insecure: true
+      zipkin:
+        endpoint: "http://openzipkin.default.svc.cluster.local:9411/api/v2/spans"
+        format: proto
+    service:
+      pipelines:
+        traces:
+          exporters:
+          - jaeger
+          - zipkin
+          - otlp/generic-collector
+          - otlphttp
+          - logging
+
