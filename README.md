@@ -115,7 +115,7 @@ Do a port-forward:
 
         kubectl port-forward <openzipkin-pod> 9411:9411
 
-View Jaeger UI:
+View Zipkin UI:
 
 ![alt text](https://github.com/prathjan/images/blob/main/zipkin.png?raw=true)
 
