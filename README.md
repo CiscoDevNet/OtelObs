@@ -105,7 +105,7 @@ View Jaeger UI:
 
 ### Deploy Zipkin Observability Backend
 
-To demonstrate the fan out capabilities of AppDynamics OpenTelemetry Collector, lets deploy a couple observability backends. Let's deploy Jaeger Tracing Tool:
+To demonstrate the fan out capabilities of AppDynamics OpenTelemetry Collector, lets deploy a couple observability backends. Let's deploy Zipkin Tracing Tool:
 
         helm repo add openzipkin https://openzipkin.github.io/zipkin
 
