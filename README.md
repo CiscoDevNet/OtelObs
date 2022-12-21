@@ -115,6 +115,9 @@ Do a port-forward:
 
         kubectl port-forward <openzipkin-pod> 9411:9411
 
+View Jaeger UI:
+
+![alt text](https://github.com/prathjan/images/blob/main/zipkin.png?raw=true)
 
 ### Leveraging Terraform to enable APM for K8s Clusters
 
@@ -203,7 +206,7 @@ Once autoinstrumented and configured for fanout, the Teastore cloud native appli
 
 ### Observe FSO in AppDynamics Cloud
 
-While only Traces are available in Jaeger and Zipkin, the FSO for Teastore application services are available in AppDynanics Cloud. Log into AppDynanics Cloud and view FSO data for each of the cloud native services deployed in EKS and AKS. An example snapshot looks as follows:
+While only Traces are available in Jaeger and Zipkin, Full Stack Observability for Teastore application services are available in AppDynanics Cloud. Log into AppDynanics Cloud and view FSO data for each of the cloud native services deployed in EKS and AKS. An example snapshot looks as follows:
 
 ![alt text](https://github.com/prathjan/images/blob/main/appdsvc.png?raw=true)
 
