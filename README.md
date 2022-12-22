@@ -158,7 +158,7 @@ Run the terraform script:
 
         terraform apply
 
-This should deploy all o the components we manually deployed in prior steps.
+This should deploy all of the components we manually deployed in prior steps.
 
 ### AppD Collector Updates - Fanout to Multiple Observability Backends
 
