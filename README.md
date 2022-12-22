@@ -158,6 +158,8 @@ Run the terraform script:
 
         terraform apply
 
+This should deploy all o the components we manually deployed in prior steps.
+
 ### AppD Collector Updates - Fanout to Multiple Observability Backends
 
 Let's configure the OpenTelemetry collector to send traces to Jaeger and Zipkin in addition to AppDynamics Cloud.
@@ -195,6 +197,8 @@ Add the following  to configure the OpenTelemetry pipelines:
 Run the terraform script to update the collector configuration: 
 
         terraform apply
+
+This should update the OpenTelemetry exporters in the OpenTelemetry Collector to export the application traces to AppD Cloud, Jaeger and Zipkin. Review the UI of each to ensure that the traces for the Teastore application are being collected.
 
 ### Observe Traces in Jaeger and Zipkin
 
